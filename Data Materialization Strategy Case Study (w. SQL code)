@@ -21,7 +21,7 @@ For the migration, you are working on the requirements for the materialization s
 Currently, data is stored in a SQL database, in tables, and stored procedures are used to populate views that are then consumed by users' analytical tools. 
 
 
-Now we can define the need as: based on operational requirements from usage patterns, define the types of tables and views for migration. 
+Now we can define the need as: based on operational requirements from usage patterns, select the best types of Snowflake tables and views for migration. 
 
 
 2.- DESIRED OUTCOME
