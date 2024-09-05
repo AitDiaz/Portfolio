@@ -26,7 +26,7 @@ Now we can define the need as: based on operational requirements from usage patt
 
 2.- DESIRED OUTCOME
 
-Is required to provide the guidelines and rationale for the best implementation of the materialization strategy for the migration. 
+To provide the guidelines and rationale for the best implementation of the materialization strategy for the migration. 
 
 3.- ASSESS ALTERNATIVES
 To properly the alternatives, let´s understand what are the types of tables and views in Snowflake:
