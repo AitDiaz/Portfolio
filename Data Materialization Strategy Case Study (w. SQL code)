@@ -75,7 +75,7 @@ Once we understood the tools at hand, and the context we can provide a recommend
 
 
 
-EXAMPLE OF IMPLEMENTATION ON SQL:
+EXAMPLE OF CODE FOR IMPLEMENTATION:
 TABLES:
 -- Creating a Permanent Table for Clients
 
