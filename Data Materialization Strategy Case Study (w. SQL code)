@@ -29,7 +29,7 @@ Now we can define the need as: based on operational requirements from user usage
 Is required to provide the guidelines and rationale for the best implementation of the materialization strategy for the migration. 
 
 3.- ASSESS ALTERNATIVES
-To properly the alternatives, let´s understand what are the tpes of tables and views in Snowflake:
+To properly the alternatives, let´s understand what are the types of tables and views in Snowflake:
       Tables:
            I.-  Permanent tables: these tables store data permanently and are fully durable. They are part of the database schema and are not automatically removed or modified.
            II.- Temporary tables: these tables exist only for the duration of a session. They are automatically dropped when the session ends, which means they are not persistent between different user sessions.
@@ -65,7 +65,7 @@ The medallion architecture is a layered approach to organizing data in a data la
                       3.- Gold (Curated): The Gold layer contains highly processed and aggregated data tailored for business analysis and reporting. This data is often summarized and optimized for performance.  
 
 
-2.- RECOMMENDED SOLUTION:
+4.- RECOMMENDED SOLUTION:
 
 Once we understood the tools at hand, and the context we can provide a recommendation for architecting the storage of our fictional company ABC Inc.
 
