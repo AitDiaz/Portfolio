@@ -18,7 +18,7 @@ Our fictional company, ABC Inc., is in the private banking and wealth management
 They are currently in the process of migrating to Snowflake to store their semi-structured data and then create data marts for each of the operational units, using Trino as the query engine and the appropriate analytics tools at the end user level. 
 
 For the migration, you are working on the requirements for the materialization strategy. This is a critical step because one of the benefits of using data lakes is that storage costs are low and by optimizing processing costs you can improve profitability. 
-Currently, data is stored in a SQL database, in tables, and stored procedures are used to populate views in SQL that are then consumed by users' analytical tools. 
+Currently, data is stored in a SQL database, in tables, and stored procedures are used to populate views that are then consumed by users' analytical tools. 
 
 
 Now we can define the need as: based on operational requirements from usage patterns, define the types of tables and views for migration. 
