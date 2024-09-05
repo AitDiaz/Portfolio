@@ -28,7 +28,7 @@ Now we can define the need as: based on operational requirements from user usage
 
 Is required to provide the guidelines and rationale for the best implementation of the materialization strategy for the migration. 
 
-3.- ASSES ALTERNATIVES
+3.- ASSESS ALTERNATIVES
 To properly the alternatives, let´s understand what are the tpes of tables and views in Snowflake:
       Tables:
            I.-  Permanent tables: these tables store data permanently and are fully durable. They are part of the database schema and are not automatically removed or modified.
