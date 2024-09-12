@@ -1,12 +1,12 @@
 PIPELINE BUILDING
-1.- Define the use case: continuing on a previous exmaple, our ocmpany ABC Inc. isi engaged in the wealth managemnet industry. They are migrating their storage to Snowflake´s data lake. 
-This time they require a complete view of the data operations involved in order to extract data from a given source, load it into snowflake´s data lake and them, using medallion architecture, modelling the data to the curated layer (gold).
-For the data modeling task we will use Ralph Kimball´s comprehensible approach to data modelling
+1.- Define the use case: Continuing a previous example, our company ABC Inc. is in the asset management industry. They are migrating their storage to Snowflake's data lake. 
+This time, they need a complete view of the data operations required to extract data from a given source, load it into Snowflake's data lake, and model the data to the curated layer (gold) using the medallion architecture.
+For the data modeling task, we will use Ralph Kimball's comprehensible approach to data modeling
 
-2.- Study requirements: After elicitation with the business counterpart, we can assert the following regarding the inputs and outputs for the pipeline:
+2.- Study requirements: After elicitation with the business partner, we can assert the following regarding the inputs and outputs for the pipeline:
                 Inputs: CSV files. One of them very large. Both grow in a relatively predicted way, although the large one does so at a higher rate. 
-                Outputs: The output of the pipeline is the bronze and silver layer of the data lake. The data needs to be cleansed, conformed to a semi-structured way. 
-                Transformations: transformation and conformation of the data to meet the requirements of the Bronze and Silver architecture. 
+                Outputs: The output of the pipeline is the bronze and silver layer of the data lake. The data needs to be cleansed, conformed in a semi-structured way. 
+                Transformations: Transform and conform the data to meet the requirements of the bronze and silver architecture. 
                 Non-functional requirements: reliability and robustness, the technologies that resonate with the team are Spark, Python, SQL. 
 
 3.-Create a workflow: 
