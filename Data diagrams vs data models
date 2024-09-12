@@ -1,0 +1,25 @@
+PIPELINE BUILDING
+1.- Define the use case: continuing on a previous exmaple, our ocmpany ABC Inc. isi engaged in the wealth managemnet industry. They are migrating their storage to Snowflake´s data lake. 
+This time they require a complete view of the data operations involved in order to extract data from a given source, load it into snowflake´s data lake and them, using medallion architecture, modelling the data to the curated layer (gold).
+For the data modeling task we will use Ralph Kimball´s comprehensible approach to data modelling
+
+2.- Study requirements: After elicitation with the business counterpart, we can assert the following regarding the inputs and outputs for the pipeline:
+                Inputs: CSV files. One of them very large. Both grow in a relatively predicted way, although the large one does so at a higher rate. 
+                Outputs: The output of the pipeline is the bronze and silver layer of the data lake. The data needs to be cleansed, conformed to a semi-structured way. 
+                Transformations: transformation and conformation of the data to meet the requirements of the Bronze and Silver architecture. 
+                Non-functional requirements: reliability and robustness, the technologies that resonate with the team are Spark, Python, SQL. 
+
+3.-Create a workflow: 
+Data FLow Diagram
+
+4.- Build a scalable architecture: The source files grow at a relatively predictable rate, so there is no massive need for scalability.
+The larger file can be processed by Spark, which is known for its reliability on large amounts of data for batch processing jobs. 
+The smaller file can be moved to Spark if needed at a later date. The business team sponsoring the change for the Python job is very familiar with object programming and uses Python regularly for many of its business processes. 
+
+5.- Select technology:
+
+Extracting Job:for the extran
+Bigger File
+Smaller file
+
+Tranformation 
