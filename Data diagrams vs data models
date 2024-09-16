@@ -1,18 +1,24 @@
-PIPELINE BUILDING
-1.- Define the use case: Continuing a previous example, our company ABC Inc. is in the wealth management industry. They are migrating their storage to Snowflake's data lake. 
+Continuing a previous example, our company ABC Inc. is in the wealth management industry. They are migrating their storage to Snowflake's data lake. 
 This time, they need a complete view of the data operations required to extract data from a given source, load it into Snowflake's data lake, and model the data to the curated layer (gold) using the medallion architecture.
 For the design and construction of the ETL pipeline we will use a 5 step approach: 1.- Define the use case, 2.- Study requirements, 3.-Create a workflow, 4.- Build a scalable architecture, 5.- Select technology
 
-For the data modeling task, we will use Ralph Kimball's comprehensible approach to data modeling.
+For the data modeling task, we will use Ralph Kimball's comprehensible approach to data modeling. The steps are 1.- Select the business process, 2.- Declare the grain, 3.- Identify the dimensions and 4.- Identify the facts.
+
+
+PIPELINE BUILDING
+
+1.- Define the use case: is requireed to design, build and mantain pipelines from source systems and files into Snowflakes´s data lake as part of the migration mentioned above. 
 
 2.- Study requirements: After elicitation with the business partner, we can assert the following regarding the inputs and outputs for the pipeline:
                 Inputs: CSV files. One of them very large. Both grow in a relatively predicted way, although the large one does so at a higher rate. 
-                Outputs: The output of the pipeline is the bronze and silver layer of the data lake. The data needs to be cleansed, conformed in a semi-structured way. 
-                Transformations: Transform and conform the data to meet the requirements of the bronze and silver architecture. 
+                Outputs: The output of the pipeline is the bronze layer of the data lake. 
+                Transformations: Although the Bronze layer requirements are raw data, not all of the data in the source files is used, so although the output is raw data, some filtering and mapping is required. 
+                                 This is consistent with data engineering best practices of minimizing data volumes and reducing processing of unnecessary data early in the pipeline.  
                 Non-functional requirements: reliability and robustness, the technologies that resonate with the team are Spark, Python, SQL. 
 
 3.-Create a workflow: 
 Data Flow Diagram:
+  
 
 
 4.- Build a scalable architecture: The source files grow at a relatively predictable rate, so there is no massive need for scalability.
@@ -21,17 +27,7 @@ The smaller file can be moved to Spark if needed at a later date. The business t
 
 5.- Select technology:
 
-Extracting Job:
 
-Extraction Job 1 	              Python	Spark	 Java
-Team experience	                     1	   3	    2
-Data science capabilities	           1     2	    3
-Working with big data	               2	   1	    3
-
-Extraction Job 2	              Python	Spark	 Java
-Team experience	                   2	    1  	  3
-Data science capabilities	         1	    2   	3
-Working with big data	             2	    1	    3
-
-
-Tranformation 
+DATA MODELLING
+1.- Select the business process
+2.- Declare the grain, 3.- Identify the dimensions and 4.- Identify the facts.
