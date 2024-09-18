@@ -1,4 +1,4 @@
-Here is an excerpt of my work.
+ I am pasionate about data science and data engineering as well as finance and economics. Here is an excerpt of my work. 
 
 1.- Antonella Research.xlsx: example of financial modeling in Excel for equity valuation. https://github.com/AitDiaz/Portfolio/commit/4dfaf38c39c6465938ae5d079938e9ce2aabe331
 
